@@ -20,6 +20,8 @@ Select BTN, substr(BTN,1, INSTR(BTN,'_')-1) Updated_BTN
 from PMT
 Where BAC = 'KENAN' and BTN like '%\_%' escape '\' order by CREATE_TIME desc;
 
+select * from rule_ref_table where  RULE_NM like 'PURL*_%' escape '*'; 
+
 -- Any character can follow ESCAPE except percent (%) and underbar (_). 
 -- A wildcard character is treated as a literal if preceded by the escape character.
 -- This means we can use any character as escape character like here we took back slash \
